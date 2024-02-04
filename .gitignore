@@ -1,2 +1,5 @@
 *.edf
 *.identifier
+*.seizures
+*.txt
+*.fif
