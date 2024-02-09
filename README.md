@@ -1,4 +1,4 @@
-# SeizureSense, a neural network capable of predicting epileptic seizures using EEG data
+# SeizureSense, a neural network capable of predicting epileptic seizures using EEG data (In Progress)
 ### Repository made with @Uddhavp22
 #### Main code is in SeizureSense.ipynb
 ## Our process
@@ -7,3 +7,6 @@
 - **Model:** Our model is a Convolutional neural network (CNN) based on the [EEGNET architecture](https://arxiv.org/abs/1611.08024) with the third layer changed to a smaller kernel size to iterate over all channels. The CNN is meant to capture spatial information from the data, and our next step is to create a model that can better capture the temporal aspects, such as a long short term memory (LSTM) or a transformer.
 - **Training:** Our model was trained using the adam optimizer with the cross entropy loss function. All training was done on an NVIDIA 3070ti GPU.
 - **Accuracy:** Our current best accuracy is *96.97%,* without testing yet for overfitting
+## Next Steps
+- **Further test CNN on all patients:** So far, we have gotten a high accuracy for the patient, but further testing is required
+- **Test Mamba architecture:** In combination with the CNN, we plan on testing the new [Mamba architecture](https://arxiv.org/ftp/arxiv/papers/2312/2312.00752.pdf) to find its usefulness for the seizure prediction task.
